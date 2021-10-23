@@ -168,7 +168,7 @@ nav img {
 .container .left p {
   padding: 1rem;
 }
-.container .left .close {
+.close {
   text-align: end;
 }
 .container .right {
@@ -195,5 +195,74 @@ nav img {
   }
   .container .right img {
     margin-top: 1.5rem;
+  }
+}
+/*Styling the skills section*/
+.containerTwo{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20rem;
+  padding: 1rem;
+  border: solid 1px #fa900f;
+}
+.containerTwo .left {
+  max-width: 40em;
+  padding-right: 30px;
+  margin-left: 0.5rem;
+}
+.containerTwo .left .h2:nth-child(2){
+  text-align: end;
+}
+.skills{
+  display: flex;
+  padding: 5rem;
+}
+.skills_percantages{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 20px;
+}
+.skills_percantages.lightgrey,.skills_names h3{
+  padding: 5px;
+}
+.lightgrey{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25rem;
+  height: 1rem;
+  border-radius: 5rem;
+  background-color: rgb(235, 231, 231);
+}
+.orange{
+  width: 10rem;
+  height: 1rem;
+  border-radius: 5rem;
+  background-color: #fa900f;
+}
+.right{
+  margin-right: 4rem;
+
+}
+.right img{
+  width: 200px;
+}
+/*Making the about section rsponsive*/
+@media only screen and (max-width: 1000px) {
+  .containerTwo {
+    flex-direction: column;
+    height: fit-content;
+    margin-top: 14rem;
+  }
+  .containerTwo .left {
+    margin-left: 0;
+  }
+  .containerTwo .right {
+    margin-right: 0;
+  }
+  .containerTwo .right img {
+    margin-top: -3rem;
   }
 }
